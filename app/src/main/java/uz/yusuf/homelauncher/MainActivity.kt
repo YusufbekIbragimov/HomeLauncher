@@ -72,8 +72,7 @@ fun getInstalledApps(context: Context): List<ResolveInfo> {
 
 @Composable
 fun AppGrid(apps: List<ResolveInfo>, context: Context, modifier: Modifier) {
-    LazyColumn {
-
+    LazyColumn(modifier = modifier) {
         item {
             Button(
                 modifier = Modifier
